@@ -20,7 +20,9 @@ func main() {
     var switch2relax bool    = true
     var switch2working bool  = false
 
-    fmt.Println("Type any key for start the Workday, the counter starts with relaxing type other key for start working")
+    fmt.Println("Type any key for start the Workday")
+    fmt.Println("The counter starts with relaxing type any key for start working")
+    fmt.Println("You start workint at " ,time.Now())
     ch := make(chan string)
     go func(ch chan string) {
         // disable input buffering
